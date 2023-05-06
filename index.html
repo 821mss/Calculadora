@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>
+            CALCULADORA CON CSS Y HTML
+        </h1>
+        <P>Esta calculadora esta compueste por el lenguaje de maquetacion HTML y estilos CSS.</P>
+        <p>Proximamente se le agregara Java Script.</p>
+        <p>Por Mario Ezequiel Silva</p>
+    </div>
+    <div class="phone">
+        <form name="calculadora"  action="">
+            <input type="textfield" class="resu" name="ans" value="" autocomplete="off" readonly>
+
+            <input type="button" class="gris" value="AC">
+            <input type="button" class="gris" value="+/-" id="">
+            <input type="button" class="gris" value="%" id="">
+            <input type="button" value="/" class="orange"  onclick="document.calculadora.ans.value+='/' ">
+            <input type="button" value="7" id="" onclick="document.calculadora.ans.value+='7'">
+            <input type="button" value="8" onclick="document.calculadora.ans.value+='8'">
+            <input type="button" value="9" onclick="document.calculadora.ans.value+='9'">
+            
+            <input type="button" value="x" class="orange" onclick="document.calculadora.ans.value+='*'">
+            <input type="button" value="4" onclick="document.calculadora.ans.value+='4'">
+            <input type="button" value="5" onclick="document.calculadora.ans.value+='5'">
+            <input type="button" value="6" onclick="document.calculadora.ans.value+='6'">
+            
+            <input type="button" value="-"  class="orange" onclick="document.calculadora.ans.value+='-'">
+            <input type="button" value="1" onclick="document.calculadora.ans.value+='1'">
+            <input type="button" value="2" onclick="document.calculadora.ans.value+='2'">
+            <input type="button" value="3" onclick="document.calculadora.ans.value+='3'">
+
+
+            <input type="button" value="+"  class="orange" onclick="document.calculadora.ans.value+='+'">
+            <input type="button" class="cero" value="0" onclick="document.calculadora.ans.value+='0'">
+            <input type="button" value="." onclick="document.calculadora.ans.value+='.'">
+            <input type="button" class="resultado" value="=" onclick="document.calculadora.ans.value=eval(document.calculadora.ans.value)">
+        </form>
+    </div>
+</body>
+</html>
